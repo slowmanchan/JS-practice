@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>Count some vowels </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+
+<body>
+  <script>
+  var input = prompt("Enter some words and i'll count the vowels");
+  var vowels = 'aeiouAEIOU';
+  var vowels_count = 0;
+
+  var vowelCounter = function(input) {
+    for (var i = 0; i < input.length; i++) {
+      if (vowels.indexOf(input[i]) !== -1) {
+        vowels_count++;
+      }
+    }
+    return vowels_count;
+  }
+  console.log(vowelCounter(input));
+
+  </script>
+</body>
+</html>
