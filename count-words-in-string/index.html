@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+  <title>palindromer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <script>
+  var input = prompt("Enter some words and I will count them");
+
+  var wordCounter = function(input) {
+    if( input ) {
+      return alert("You have " + input.trim().split(' ').length + " words");
+    }else{
+      return alert("no empty strings");
+    }
+  }
+
+  wordCounter(input);
+  </script>
+</body>
+</html>
